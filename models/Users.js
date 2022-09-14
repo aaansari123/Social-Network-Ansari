@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const thoughtSchema = require('./Thought');
+
 
 // Schema to create Student model
 const userSchema = new Schema(
@@ -18,7 +18,7 @@ const userSchema = new Schema(
     },
     thoughts: [{
         
-      type: mongoose.Schema.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: 'Thoughts'
     }],
     friends: [this],
